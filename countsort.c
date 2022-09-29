@@ -43,7 +43,7 @@ void countSort(int a[], int n) // function to perform counting sort
    }  
 }  
   
-void printArr(int a[], int n) /* function to print the array */  
+void printArr(int a[], int n)
 {  
     int i;  
     for (i = 0; i < n; i++)  
@@ -59,14 +59,14 @@ int main() {
         a[k] = rand() % 1001; 
         //printf ("%i, ", a[k]);
     }
-    printf("\nBefore sorting array elements are - \n");  
+    printf("\nAntes do sort os elementos do  array eram - \n");  
     printArr(a, n);  
     
     double time_spent = 0.0;
     clock_t begin = clock ();
 
     countSort(a, n);  
-    printf("\n\nAfter sorting array elements are - \n");    
+    printf("\n\nDepois do sort os elentos do array sao - \n");    
     printArr(a, n);  
     printf("\n\n");
     
